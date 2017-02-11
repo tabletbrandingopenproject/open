@@ -1,0 +1,26 @@
+gnome-shell-extension-cli usage:
+
+-h|--help) print_help
+-e--enable-extension 
+-d|--disable-extension)	disable_extension $2
+-le|--list-enabled) print_enabled_extensions
+-sle|--simple-list-enabled) simple_print_enabled_extensions
+-l|--list-all) print_installed_extensions
+-st|--status) if  [ "$(check_extension_is_enabled $2)" = true ] 
+		then 
+			echo "Extension \"$2\" is  enabled."
+		else
+			echo "Extension \"$2\" is  disabled."
+		fi
+-lc|--list-all-containing)
+		print_installed_extensions| grep -i $2
+-slc|--simple-list-all-containing)
+		simple_print_enabled_extensions | grep -i $2
+-lec|--list-enabled-containing)
+		rint_enabled_extensions | grep -i $2
+-slec|--simple-list-enabled-containing)
+		simple_print_enabled_extensions | grep -i $2
+-rt|--return-status)
+		check_extension_is_enabled $2
+
+
