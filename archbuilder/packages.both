@@ -64,3 +64,18 @@ wpa_actiond
 wvdial
 xl2tpd
 zd1211-firmware
+
+## AUR Access
+autoconf
+automake
+binutils
+bison
+fakeroot
+flex
+gcc
+libtool
+m4
+make
+patch
+subversion
+yaourt
