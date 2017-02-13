@@ -79,3 +79,12 @@ make
 patch
 subversion
 yaourt
+##add xorg 
+xorg-server 
+xf86-video 
+xorg-server-wayland
+##flatpak pm
+flatpak
+##UI
+gdm
+gnome-shell
