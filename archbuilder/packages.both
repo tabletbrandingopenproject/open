@@ -68,6 +68,7 @@ zd1211-firmware
 ## AUR Access
 autoconf
 automake
+
 binutils
 bison
 fakeroot
@@ -88,3 +89,4 @@ flatpak
 ##UI
 gdm
 gnome-shell
+iio-sensor-proxy
