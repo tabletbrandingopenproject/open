@@ -1,0 +1,6 @@
+######TABLET ON
+## ON
+gnome-shell-extensions-cli --enable-extension caribou-resize-workspace && gnome-shell-extensions-cli --enable-extension gnome-shell-extension-slide-for-keyboard 
+##OFF
+gnome-shell-extensions-cli --disable-extension dash-to-panel && gnome-shell-extensions-cli --disable-extension shellshape
+exit
