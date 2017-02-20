@@ -23,4 +23,28 @@ gnome-shell-extension-cli usage:
 -rt|--return-status)
 		check_extension_is_enabled $2
 
+#################################examples
+TabletON:
+•OFF: dash-to-pannel:
+https://extensions.gnome.org/extension/1160/dash-to-panel/
+•OFF: tilling:
+https://extensions.gnome.org/extension/294/shellshape/
+•ON: caribou-resize-workspace:
+https://extensions.gnome.org/extension/1024/caribou-resize-workspace/
+•ON: Slide keyboard:
+https://github.com/schuhumi/gnome-shell-extension-slide-for-keyboard#####TABLET ON
 
+#!/bin/bash
+######TABLET ON
+## ON
+gnome-shell-extensions-cli --enable-extension caribou-resize-workspace && gnome-shell-extensions-cli --enable-extension gnome-shell-extension-slide-for-keyboard 
+##OFF
+gnome-shell-extensions-cli --disable-extension dash-to-panel && gnome-shell-extensions-cli --disable-extension shellshape
+exit
+-----------------------------------------------------
+#!/bin/bash
+###TABLET OFF
+##OFF 
+gnome-shell-extensions-cli --disable-extension caribou-resize-workspace && gnome-shell-extensions-cli --disable-extension gnome-shell-extension-slide-for-keyboard 
+##ON 
+gnome-shell-extensions-cli --enable-extension dash-to-panel && gnome-shell-extensions-cli --enable-extension shellshape
